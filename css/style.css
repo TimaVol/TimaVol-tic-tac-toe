@@ -1,0 +1,115 @@
+* {
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    user-select: none;
+}
+
+span {
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.container {
+    background-color: rgb(26, 26, 26);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+h1 {
+    color: white;
+    padding-top: 20px;
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.playSpace {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 80%;
+}
+
+.box {
+    background-color: rgb(112, 112, 112);
+    box-shadow: 3px 3px chocolate;
+    height: 150px;
+    max-width: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    cursor: pointer;
+}
+
+.box.cross::before {
+    content: 'X';
+    font-size: 90px;
+}
+
+.box.zero::after {
+    content: 'O';
+    font-size: 90px;
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: rgb(112, 112, 112);
+    position: relative;
+}
+
+.sidebar * {
+    margin-top: 10px;
+}
+
+.labelPlayer {
+    padding: 5px 15px;
+}
+
+.labelPlayer.one {
+    background-color: rgba(204, 117, 55, 0.836);
+}
+
+.labelPlayer.two {
+    background-color: rgb(187, 186, 186);
+}
+
+.counter {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.labelPlayAgain {
+    padding: 5px 20px;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    border-radius: 2px;
+    max-width: calc(100% - 20px);
+}
+
+.labelPlayAgain:hover {
+    cursor: pointer;
+}
+
+.labelPlayAgain span {
+    font-size: 10px;
+}
