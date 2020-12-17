@@ -143,7 +143,7 @@ box.forEach((elem) => {
             });
             break;
         }
-      } else if (counterNum == 9) {
+      } else if (counterNum == 9 && !elem.style == 'green') {
         aga = true;
       }
 
